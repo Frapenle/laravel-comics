@@ -1,17 +1,21 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('main-content')
 <div class="row">
-    <div class="col">
-        <div class="card">
-            <div class="img">
-                <img src="#" alt="serie">
-            </div>
-            <div class="series">
-                <h5>serie</h5>
+    @foreach ($comics as $comic)
+    <?php dd($comics[2]['title'])?>
+        <div class="col">
+            <div class="card">
+                <div class="img">
+                    
+                </div>
+                <div class="series">
+                    <h5>{{ $comic->title }}</h5>
+                </div>
             </div>
         </div>
-    </div>
+        
+    @endforeach
 </div>
     
 @endsection
