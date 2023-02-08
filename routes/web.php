@@ -18,5 +18,6 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('db');
+    return view('partials.comics', ['comics' => $comics]);
 })->name('comics');
