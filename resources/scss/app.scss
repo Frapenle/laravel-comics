@@ -5,43 +5,45 @@ $footer-bottom-bg: #303030;
 
 header {
     height: 85px;
-}
 
-nav {
-    font-size: .8rem;
-    text-transform: uppercase;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-ul {
-    height: 100%;
-    align-items: center;
-    display: flex;
-    gap: 1.5rem;
-    font-weight: 500;
-    list-style-type: none;
-
-    a {
-        color: black;
-        text-decoration: none;
+    img {
+        width: 65px;
     }
 
-    li {
+    nav {
+        font-size: .8rem;
+        text-transform: uppercase;
         height: 100%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        border-bottom: 4px solid transparent;
+    }
 
-        &.active {
-            color: $main-color;
-            border-bottom: 4px solid $main-color;
+    ul {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        gap: 1.5rem;
+        font-weight: 500;
+        list-style-type: none;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 4px solid transparent;
+
+            &.active {
+                color: $main-color;
+                border-bottom: 4px solid $main-color;
+            }
         }
     }
 }
 
-img {
-    width: 65px;
-}
+// ========= cards ============
