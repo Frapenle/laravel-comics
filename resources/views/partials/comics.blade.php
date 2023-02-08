@@ -1,16 +1,15 @@
 @extends('layouts.app')
 
-@section('main-content')
+@section('main')
 <div class="row">
     @foreach ($comics as $comic)
-    <?php dd($comics[2]['title'])?>
         <div class="col">
             <div class="card">
                 <div class="img">
-                    
+            <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                 </div>
                 <div class="series">
-                    <h5>{{ $comic->title }}</h5>
+                    <h5>{{ $comic['title'] }}</h5>
                 </div>
             </div>
         </div>
