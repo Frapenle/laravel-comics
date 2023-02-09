@@ -12,13 +12,11 @@
 </head>
 
 <body>
-    @include('partials/header')
+    @include('partials.header')
     <main>
         @yield('main')
     </main>
-
-
-    @include('partials/footer')
+    @include('partials.footer')
 
 </body>
 
